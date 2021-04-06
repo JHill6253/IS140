@@ -1,0 +1,51 @@
+<!--
+    Author: John Hill
+    Date:  4/5/2021
+-->
+
+<!doctype html>
+<html>
+
+<head>
+    <style type="text/css">
+        td {
+            font-size: 11px;
+            font-family: 'Courier New', Courier, monospace;
+            vertical-align: top;
+            text-align: center;
+            border: 1px solid black;
+        }
+
+        table {
+            border-top: 5px solid grey;
+            border-left: 5px solid grey;
+            border-bottom: 5px solid black;
+            border-right: 5px solid black;
+        }
+    </style>
+    <script language="javascript" type="text/javascript">
+
+        //This script will create a new array called myArray that will contain the values of the special characters in HTML
+        // Then the script will complete a nested for loop that will output the value from myArray
+
+        var k = 0, myArray = new Array(), myTable = "<table><tr><td colSpan=16><b>HTML Special Characters</b></td> </tr>";
+        for (i = 0; i < 257; i++) { myArray.push("&#" + i) }
+        for (var j = 0; j < 16; j++) {
+            myTable += "<tr>";
+            for (var i = 0; i < 16; i++) {
+                k++;
+                myTable += j % 2 === 0 ? "<td bgcolor='pink'>" + k + "<br/>" + myArray[k] + "</td>" : "<td >" + k + "<br/>" + myArray[k] + "</td>";
+            }
+
+            myTable += "</tr>"
+        }
+        myTable += "</table>";
+        document.write(myTable);
+    </script>
+</head>
+
+<body>
+    <div id="tablePrint"> </div>
+</body>
+
+</html>
