@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!--    
+    Advanced Topic Project
+    Author: John Hill
+    Date: 04/13/2021
+
+    Filename: blockchain.html
+   -->
+  <title>Blockchain Explained</title>
+  <link rel="shortcut icon" href="favicon.ico">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      margin: 0;
+      text-rendering: optimizeLegibility;
+    }
+    
+    .header {
+      padding: 20px 20px 20px 20px;
+      width: 100%;
+      text-align: center;
+      background-color: rgb(0, 54, 72);
+      background-image: url(hero-gradient.svg);
+      background-attachment: fixed;
+      color: white;
+    }
+
+    .header h1 {
+      font-size: 40px;
+    }
+
+    .header p {
+      font-size: 20px;
+    }
+
+    h2 {
+      margin: 0px 12px 0px 0px;
+      font-size: 24px;
+      font-weight: bold;
+      line-height: 1.5;
+      color: rgb(0, 54, 72);
+    }
+
+    p {
+      font-size: 18px;
+      font-weight: 400;
+    }
+
+    li {
+      font-size: 18px;
+    }
+
+    .newh2 {
+      margin: 0px 12px 0px 0px;
+      font-family: Raleway, sans-serif;
+      font-size: 48px;
+      font-weight: bold;
+      line-height: 1.5;
+      color: rgb(0, 54, 72);
+    }
+
+    .navbar {
+      overflow: hidden;
+      background-color: rgb(0, 54, 72);
+      position: sticky;
+      position: -webkit-sticky;
+      top: 0;
+      background-image: url(hero-gradient.svg);
+    }
+
+    .navbar a {
+      float: left;
+      display: block;
+      color: white;
+      text-align: center;
+      padding: 14px 20px;
+      text-decoration: none;
+    }
+
+    .navbar a.right {
+      float: right;
+    }
+
+    .navbar a:hover {
+      background-color: #ddd;
+      color: black;
+    }
+
+    .navbar a.active {
+      background-color: #666;
+      color: white;
+    }
+
+    .row {
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+    }
+
+    .main {
+      -ms-flex: 70%;
+      flex: 70%;
+      background-color: white;
+      padding: 20px;
+      margin-left: 15%;
+      margin-right: 15%;
+    }
+
+    .images {
+      width: 100%;
+      padding: 20px;
+    }
+
+    .footer {
+      padding: 20px;
+      text-align: center;
+      background: rgb(0, 54, 72);
+    }
+
+    .footer h2 {
+      color: white;
+    }
+
+    .footer a {
+      color: white;
+    }
+
+    img {
+      border-style: none;
+    }
+
+    @media screen and (max-width: 700px) {
+      .row {
+        flex-direction: column;
+      }
+    }
+
+    @media screen and (max-width: 400px) {
+      .navbar a {
+        float: none;
+        width: 100%;
+      }
+    }
+
+    .header-container {
+      margin-top: 48px;
+      margin-bottom: 32px;
+      justify-content: center;
+      display: flex;
+      -webkit-box-align: center;
+      align-items: center;
+    }
+
+    .category-icon {
+      margin-right: 12px;
+      height: 80px;
+      width: 80px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="navbar">
+    <a href="#" class="active">Home</a>
+    <a href="https://www.investopedia.com/terms/b/blockchain.asp">Explanation</a>
+    <a href="#https://www.businessinsider.com/blockchain-technology-applications-use-cases">Uses</a>
+    <a href="https://www.simplilearn.com/tutorials/blockchain-tutorial/how-to-become-a-blockchain-developer">Become a
+      Blockchain Engineer</a>
+  </div>
+  <div class="header">
+    <h1>Blockchain</h1>
+    <p>A <b>decentralized</b> way to work.</p>
+    <p>Blockchain is a public list of records that is distributed, consistent, and irreversible. Since these records are
+      distributed, there isn’t a sole person or entity that controls the information on the blockchain. It’s immutable
+      and records are consistent across all nodes in the system.</p>
+  </div>
+  <div class="row">
+    <div class="main">
+      <div class=" header-container">
+        <img src="https://next-cdn.codementor.io/images/learnBlockchain/icon-blockchain.svg" class=" category-icon">
+        <h2 class="newh2">Blockchain Basics</h2>
+      </div>
+      <h2>A Guide for Everyone</h2>
+      <p>What is the blockchain and why should you care about it? Hailed by some as the biggest force for change in our
+        time and by others as a fringe realm inhabited by criminals, anarchists, and libertarians, one thing is certain;
+        the blockchain is here to stay.
+      </p>
+      <p>
+        What follows is my attempt to explain in everyday language what the blockchain is, where it came from, what the
+        potential risks are, and the effect that it will have on our lives and businesses going forward.
+      </p>
+      <br>
+      <h2>Bits and Blocks</h2>
+      <p>The blockchain was originally developed as the underpinnings of the original crypto-currency ‘Bitcoin’. So to
+        properly understand blockchain, we must first take a look at what Bitcoin was trying to achieve.
+      </p>
+      <p>
+        Bitcoin was designed to be a decentralised cryptocurrency, free of the need for a third-party intermediary. It
+        achieved this by publicly broadcasting all transactions across all computers in its distributed network.
+      </p>
+      <p>
+        The role of the blockchain was to provide a way for all computers across this distributed network to reach a
+        consensus (agreement) about what transactions have occurred and who owns what, all without the need for a
+        central authority (like a bank or government). This is known as a public ledger, and is available for anyone to
+        verify at any time. In essence blockchain can be view as this public ledger.
+      </p>
+      <br>
+      <h2>How blockchain works</h2>
+      <p>
+        Blockchain records transactions by a process of five steps.
+      </p>
+      <ol type="1">
+        <li>
+          Transactions made using a specific protocol (bitcoin for example) and are bundled into a timestamped ‘block’
+          with a unique identifier called a ‘hash’.
+        </li>
+        <li>
+          Computers on the network race to be the first to discover (through a process called ‘mining’) the correct hash
+          for this particular block. Called ‘proof-of-work’ this is a very processing power resource intensive action.
+          The successful miner (the computer that was first to discover the correct hash for the block) is then awarded
+          with some sort of prize (some bitcoin for example) as an incentive to keep as many computer resources
+          maintaining the network as possible.
+        </li>
+        <li>
+          Once the particular block’s hash is correctly identified, or ‘solved’, it is broadcast over the network where
+          it needs to be verified by the majority of other computers to be considered valid.
+        </li>
+        <li>
+          Once considered valid, the accepted block is then linked to the existing chain of blocks, with its hash being
+          used as the starting point for the next block. In this way each block is intrinsically linked to all the
+          blocks that have gone before it.
+        </li>
+        <li>
+          This complete record of every transaction is shared across every computer on the network, and can be inspected
+          by anyone allowing a completely public, immutable, and verifiable record of transactions and ownership.
+        </li>
+      </ol>
+      <p>
+        To help visualise this, picture the blockchain as a tower of lego, where blocks are added one by one on top of
+        each other. The tower is visible to anyone (publically verifiable) and once built the order of the blocks cannot
+        be changed (immutable).
+      </p>
+      <br>
+      <div>
+        <img src="LegoImage.jpg" alt="5 Terre" style="width:50%">
+      </div>
+      <br>
+      <h2>Security Concerns</h2>
+      <p>The security of the blockchain lies in the large amount of distributed computers, combining to create vast
+        amounts of processing power spread over the network.
+      </p>
+      <p>
+        The process by which blocks are created is unique and cannot be cheated, it is possible in theory for a
+        malicious actor to to create a false block by generating an entirely new blockchain, including corresponding
+        proof-of-works, and then adding this new sequence to the existing blockchain by outpacing the main, consensus
+        approved, chain.
+      </p>
+      <p>
+        The processing power required to do such a thing would have to exceed that of the combined network, a near
+        impossible feat, and one that is made exponentially more difficult the larger a network grows. On large networks
+        such as the bitcoin network, it is unrealistic in the extreme; although newer, smaller networks may be
+        vulnerable.
+      </p>
+      <p>
+        The network is also vulnerable to what is called a ‘51% attack’. If a certain actor was to control 51% of the
+        processing power of a network, he or she could deny any or all new transactions from being added to the
+        blockchain. This however does not affect the immutability of previous blocks, only those going forward. This is
+        again difficult because of the astronomical amount of computing power required. It has also been suggested that
+        it would be more profitable for such an actor to collect the reward for verifying legitimate transactions.
+        It is worth noting at this time that so far the only network of sufficient size to minimise the above risks to
+        an acceptable degree is the Bitcoin network. This is due to its enormous network size and the vast amount of
+        capital that has already been invested in its infrastructure. It remains unclear if other networks will ever
+        overcome this first-mover advantage, or if the majority of development will continue to consolidate on the
+        bitcoin blockchain.
+      </p>
+      <p>
+        The final issue with blockchain technology is not intrinsic to blockchain itself, but rather to how individuals
+        protect themselves. Just like email or online banking, a set of credentials (username and password for example)
+        are required to interact with and secure your assets. And these credentials can be stolen in the traditional
+        means, via scams, blackmail, or hacking a database which your information is stored.
+        In this way the blockchain can never be ‘hacked’ like a traditional system, however individuals can still be
+        susceptible to identity theft.
+      </p>
+      <br>
+      <h2>Real world implications</h2>
+      <p>While not immediately apparent, the ability to have a peer-to-peer public ledger without third party
+        verification has far reaching ramifications.
+      </p>
+      <p>
+        At the highest level it creates an environment where transactions can take place without the need to trust the
+        other party or intermediary. This ‘trustless’ property of blockchain allows parties to conduct business with
+        complete confidence that the details of the deal are indisputable.
+      </p>
+      <p>
+        The technology of blockchain opens up a world of self-executing ‘smart-contracts’. This is a contract where
+        certain outcomes are irrevocably linked to predetermined conditions. For instance, when a shipment of good is
+        marked as received (the condition) payment would automatically be forwarded to the supplier’s account (the
+        outcome). This would virtually eliminate the need for third-party verification and payment/escrow services.
+        Finally the ability to have an immutable and publicly viewable ledger of accounts and assets would completely
+        remove the possibility for accounting fraud. An indisputable public record of transfers and assets, of
+        everything from crypto-currency to share ownership to voting rights, is perhaps the greatest shift that
+        blockchain technology unlocks.</p>
+    </div>
+  </div>
+  <div class="footer">
+    <h2>IS145, Advanced Topic Project, Spring 2021</h2>
+    <a href="https://medium.com/@scott.oudendyk/the-blockchain-in-1000-words-4a2f86f6313a">Source</a>
+  </div>
+</body>
+
+</html>
